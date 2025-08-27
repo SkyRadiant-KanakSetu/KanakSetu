@@ -1,0 +1,25 @@
+const API = '/api';
+
+export async function getInstitutions(){
+  const res = await fetch(`${API}/institutions`);
+  return res.json();
+}
+
+export async function createDonation(payload){
+  const res = await fetch(`${API}/donations`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  });
+  return res.json();
+}
+
+export async function getInstitutionDonations(id){
+  const res = await fetch(`${API}/institutions/${id}/donations`);
+  return res.json();
+}
+
+export async function getDonation(id){
+  const res = await fetch(`${API}/donations/${id}`);
+  return res.json();
+}

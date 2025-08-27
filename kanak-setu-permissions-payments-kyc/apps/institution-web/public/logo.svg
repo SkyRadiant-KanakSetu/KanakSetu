@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#d4af37"/>
+      <stop offset="1" stop-color="#ffd700"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="60" rx="12" fill="#fff"/>
+  <g transform="translate(12,12)">
+    <circle cx="18" cy="18" r="18" fill="url(#g)"/>
+    <path d="M10 22 L18 10 L26 22 Z" fill="#fff" opacity="0.9"/>
+    <path d="M14 26 h8 v4 h-8z" fill="#fff" opacity="0.9"/>
+  </g>
+  <text x="70" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#222">
+    Kanak <tspan fill="#d4af37">Setu</tspan>
+  </text>
+</svg>
